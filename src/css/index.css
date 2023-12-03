@@ -5,7 +5,12 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./normalize.css');
 @import url('./header.css');
+@import url('./discaver.css');
+@import url('./discover.css');
+@import url('./digest.css');
+@import url('./footer.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -21,4 +26,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #2B2B2B;
 }
