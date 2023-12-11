@@ -11,6 +11,12 @@
 @import url('./discover.css');
 @import url('./digest.css');
 @import url('./footer.css');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -34,6 +40,7 @@ body {
   background-color: #2B2B2B;
 }
 /*==========container============================*/
+
 .container {
   margin: 0 auto;
   max-width: 375px;

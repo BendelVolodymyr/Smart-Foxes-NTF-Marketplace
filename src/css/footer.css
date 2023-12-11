@@ -1,5 +1,6 @@
 .footer {
     background-color: #3B3B3B;
+    
 }
 .footer-container {
    padding-top: 40px;
@@ -90,15 +91,47 @@ margin-bottom: 20px;
 
     margin-bottom: 20px;
 }
+@media only screen and (min-width: 834px) {
+    .footer-form-wrapper {
+position: relative;
+    }
+}
+
 .footer-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 .footer-label {
     display: flex;
-    /* max-width: 315px; */
+    max-width: 315px;
     width: 100%;
+
+    position: relative;
+}
+
+@media only screen and (min-width: 834px) {
+    .footer-label {
+        max-width: 420px;
+    }
+}
+
+.footer-label::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    background-color: #858584;
+    width: 100%;
+height: 1px;
+
+bottom: -78px;
+left: 0px;
+}
+@media only screen and (min-width: 834px) {
+    .footer-label::after {
+        bottom: 8px;
+    }
 }
 .footer-input {
     border-radius: 20px;
@@ -114,13 +147,21 @@ margin-bottom: 20px;
 
 margin-bottom: 16px;
 }
+@media only screen and (min-width: 834px) {
+    .footer-input {
+        padding-top: 19px;
+        padding-bottom: 19px;
+
+        margin-bottom: 40px;
+    }
+}
 .footer-input::placeholder {
     columns: #2B2B2B;
     font-family: Work Sans;
     line-height: 1.4;
 }
 .footer-btn {
-    width: 100%;
+    max-width: 315px;
     display: flex;
 align-items: center;
 justify-content: center;
@@ -129,31 +170,32 @@ align-self: stretch;
 
 border-radius: 20px;
 background-color: #A259FF;
-
 padding-top: 12px;
 padding-bottom: 12px;
-
 border: none;
-
-position: relative;
 
 margin-bottom: 50px;
 }
-.footer-btn::after {
-    content: "";
-    display: block;
-    position: absolute;
-
-    background-color: #858584;
-    width: 100%;
-height: 1px;
-
-bottom: -30px;
-left: 0px;
+@media only screen and (min-width: 834px) {
+    .footer-btn {
+        min-width: 179px;
+        position: absolute;
+        top: 0;
+        right: 270px; 
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
 }
+
 .footer-btn-icon {
     width: 20px;
     height: 20px;
+}
+@media only screen and (min-width: 834px){
+    .footer-btn-icon {
+        display: none;
+    }
+    
 }
 .footer-btn-text {
     color: #FFF;
