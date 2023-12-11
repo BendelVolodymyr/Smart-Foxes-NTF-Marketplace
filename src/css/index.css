@@ -41,14 +41,14 @@ body {
   padding-right: 30px;
   outline: 1px solid red;
 }
-@media (min-width: 834px) {
+@media only screen and (min-width: 834px) {
   .container {
     max-width: 834px;
     padding-left: 72px;
     padding-right: 72px;
   }
 }
-@media (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
     padding-left: 115px;
