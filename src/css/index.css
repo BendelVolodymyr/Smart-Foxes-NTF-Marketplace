@@ -11,6 +11,12 @@
 @import url('./discover.css');
 @import url('./digest.css');
 @import url('./footer.css');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -32,4 +38,27 @@ body {
   font-family: 'Space Mono', monospace;
   font-family: 'Work Sans', sans-serif;
   background-color: #2B2B2B;
+}
+/*==========container============================*/
+
+.container {
+  margin: 0 auto;
+  max-width: 375px;
+  padding-left: 30px;
+  padding-right: 30px;
+  outline: 1px solid red;
+}
+@media only screen and (min-width: 834px) {
+  .container {
+    max-width: 834px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
 }
