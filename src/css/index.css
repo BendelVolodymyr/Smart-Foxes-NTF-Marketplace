@@ -11,6 +11,7 @@
 @import url('./discover.css');
 @import url('./digest.css');
 @import url('./footer.css');
+
 *,
 *::before,
 *::after {
@@ -34,11 +35,19 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  display: none;
+}
+
 body {
   font-family: 'Space Mono', monospace;
   font-family: 'Work Sans', sans-serif;
   background-color: #2B2B2B;
 }
+
 /*==========container============================*/
 
 .container {
@@ -48,6 +57,7 @@ body {
   padding-right: 30px;
   outline: 1px solid red;
 }
+
 @media only screen and (min-width: 834px) {
   .container {
     max-width: 834px;
@@ -55,6 +65,7 @@ body {
     padding-right: 72px;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
